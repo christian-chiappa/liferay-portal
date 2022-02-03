@@ -43,14 +43,6 @@ public class CommerceReportExporterImpl implements CommerceReportExporter {
 
 	@Override
 	public byte[] export(
-			Collection<?> beanCollection, Map<String, Object> parameters)
-		throws IOException {
-
-		return export(beanCollection, parameters, null);
-	}
-
-	@Override
-	public byte[] export(
 			Collection<?> beanCollection, Map<String, Object> parameters,
 			FileEntry fileEntry)
 		throws IOException {
